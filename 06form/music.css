@@ -1,0 +1,225 @@
+body{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+Header {
+    background-color: #025159;
+    padding: 1rem 10px;
+}
+/*header stuff*/
+header span {
+    font-size: 3rem;
+    color: #d7f0f2;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+
+}
+/*navgation stuff*/
+nav{
+    background-color: #a67458;
+}
+nav ul {
+    margin: 0;
+    padding: 0 0;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display:block;
+    padding: 12px 16px;
+    text-decoration:none;
+    font-size: 2rem;
+    font-weight: 400;
+    color:#d7f0f2;
+}
+
+nav ul li.active a {
+    background-color: #025159;
+    color: #d7f0f2;
+}
+
+nav li a:hover {
+    background-color: #e4ecec;
+    color: #024873;
+    
+}
+
+/* main stuff here */
+
+main {
+    background-color: #e4ecec;
+    padding: 20px;
+}
+main h1 {
+    color: #025159;
+}
+
+main h2 {
+    color: #3e848c;
+    margin-bottom: .3rem;
+}
+
+main p {
+    margin: 0;
+    color: #024873;
+    text-align: justify;
+    font-size: large;
+}
+main ol {
+    padding: .8rem 30px;
+    background-color: #7ab8bf;
+    border-radius: 10px;
+    margin-right: 25%;
+}
+main ol li {
+    padding-bottom: .5rem;
+    font-size: 1.1rem;
+    color: #033352;
+}
+main dl {
+    border-radius: 30px;
+    border: #033352;
+    border-style: dotted;
+    padding: 12px 16px;
+}
+main dl dt {
+    color: #3e848c;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    font-size: 18px;
+}
+main dl dd {
+    color: #024873;
+    font-size: .9rem;
+    margin:8px 16px;
+}
+main ul {
+    list-style-type:square;
+    color: #024873;
+} 
+
+main ul li {
+    line-height: 100%;
+    margin-bottom: .3rem;
+    font-size: 1.2rem;
+}
+main strong {
+    font-weight: 700;
+    color: #025159;
+}
+main em {
+    font-weight: 300;
+}
+main address {
+    font-style: normal;
+    background-color: #d7f0f2;
+    padding: .5rem;
+    border-radius: 10px;
+    
+    width: 200px;
+    margin-top: 20px;
+}
+main a {
+    color: #024873;
+
+}
+main a:hover {
+    color: rgb(233, 160, 24);
+}
+/*image stuff here*/
+figure.wrapped {
+    margin: 20px;
+    width: 20%;
+    float: right;
+    background-color: #7ab8bf;
+    border-radius: 10px;
+    padding: 10px;
+    border: 10px;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #024873;
+}
+/* photo stuff here*/
+div.photo { 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+div.photo figure {
+    margin: 0;
+}
+div.photo figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #024873;
+}
+/*form stuff*/
+.eventForm fieldset {
+    border: 2px solid #7ab8bf;
+    border-radius: 5px;
+    margin-bottom: .8rem;
+    background-color: #7ab8bf;
+}
+
+.eventForm legend {
+    color: white;
+    font-size: 1.2rem;
+    background-color: #025159;
+    padding: .5rem;
+    border-radius: 3px;
+}
+.eventForm label {
+    margin: .3rem;
+}
+
+.eventForm label, .eventForm select, .eventForm [type=text], .eventForm [type=email], .eventForm textarea, .eventForm [type=tel] {
+    display: block;
+    margin: .2rem;
+}
+
+.eventForm [type=text], .eventForm [type=email], .eventForm select, .eventForm textarea, .eventForm [type=tel] {
+    border: solid 1px #888;
+    padding: .5rem;
+    width: 250px ;
+    border-radius: 3px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.eventForm [type=submit] {
+    background-color: #7ab8bf;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #024873;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    
+}
+
+.eventForm [type=submit]:hover {
+    background-color: #3e848c;
+}
+/* footer stuff*/
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    clear: both;
+
+}
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #333;
+}
