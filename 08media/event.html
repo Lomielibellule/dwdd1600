@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Salomé Passeraub">
+    <meta name="description" content="Book and Event Page of my protfolio website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="music.css">
+    <title>Music From the Heart: Book an Event</title>
+</head>
+
+<body>
+
+    <header>
+         <img src="image/logopetit.png" alt="logo for music from the heart" width="100" height="100">
+        <!--Header of the page with name of the company-->
+        <Span>Music From the Heart</Span>
+    </header>
+
+    <nav>
+        <!--Navigation and where you can find what you need-->
+
+        <ul>
+            <li><a href="index.html">Portfolio</a></li>
+            <li class="active"><a href="event.html">Book an Event</a></li>
+            <li><a href="concert.html">Concerts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!--The main of the page, description and some pictures-->
+        <h1>Book an Event</h1>
+        <h2>Here is what you can book!</h2>
+        <ul>
+            <li>lesson</li>
+            <li>a wedding</li>
+            <li>other occasions</li>
+        </ul>
+        <h2>Pricing</h2>
+
+        <table class="eventtable">
+            <tr>
+                <th>Event</th>
+                <th>Duration</th>
+                <th>Price</th>
+
+            </tr>
+            <tr>
+                <td>Cello Lesson</td>
+                <td>45 minutes</td>
+                <td>$40.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>60 minutes</td>
+                <td>$55.00</td>
+            </tr>
+            <tr>
+                <td>Wedding</td>
+                <td>Ceremony (1hour)</td>
+                <td>$300.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Reception (2hours)</td>
+                <td>$600.00</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Both (4hours)</td>
+                <td>$800.00</td>
+            </tr>
+            <tr>
+                <td>Other events</td>
+                <td>TBD</td>
+                <td>75$/hour/musician</td>
+            </tr>
+
+        </table>
+       <!-- <dl>
+            <dt>Cello lesson</dt>
+            <dd>40$ for 45 min <br>
+                55$ for 60 min</dd>
+            <dt>Weddings</dt>
+            <dd>Wedding prices come in a package. <br>
+                Ceremony and Reception is <strong>800$</strong> <br>
+                Ceremony only is <strong>300$</strong> <br>
+                Reception only is <strong>600$</strong></dd>
+            <dt>Other occasions</dt>
+            <dd>75$/hour per musicians <br>
+                Which means, for a quartet to play for two hours, the total is <strong>600$</strong>.</dd>
+
+        </dl>-->
+        <h2>Book an event!</h2>
+        <form method="get" class="eventForm" action="thankyou.html">
+
+
+            <fieldset>
+                <legend>Event you can book!</legend>
+                <label><input type="radio" name="method" value="lesson">Cello Lesson</label>
+                <!-- <label> Lesson duration
+                     <select name="time">
+                        <option value="none">Please select</option>
+                        <option value="short">45min lesson (40$)</option>
+                        <option value="long">60min lesson (55$)</option>
+                        <option value="personalized">Personalized</option>
+                    </label>
+                    </select>-->
+
+                <label><input type="radio" name="method" value="wedding">Wedding</label>
+                <label><input type="radio" name="method" value="other">Other Occasions</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cello Lessons</legend>
+                <label><input type="checkbox" name="45min" value="chosen">45 min lesson (40$)</label>
+                <label><input type="checkbox" name="60min" value="chosen">60 min lesson (55$)</label>
+                <label><input type="checkbox" name="personalized" value="chosen">Personalized (price may vary)</label>
+
+                <label> Comments
+                    <textarea name="comment"
+                        placeholder="please tell us more about the lesson time if you chose personalized"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <Legend>Wedding</Legend>
+                <label><input type="checkbox" name="ceremony" value="chosen">Ceremony</label>
+                <label><input type="checkbox" name="recepetion" value="chosen">Reception</label>
+                <label><input type="checkbox" name="personalized" value="chosen">Personalized (price may vary)</label>
+                <label> Comments
+                    <textarea name="comment"
+                        placeholder="please tell us more about the wedding if you chose personalized"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Other Occasions</legend>
+                <label>Occasion <input type="text" name="occasions"></label>
+                <label>How long? <input type="text" name="duration"></label>
+
+
+                <label>Which instruments <input type="text" name="instruments"></label>
+                <label> How many musicians?
+                    <select name="nmusicians">
+                        <option value="none">Please select</option>
+                        <option value="solo">solo</option>
+                        <option value="duet">duet</option>
+                        <option value="trio">trio</option>
+                        <option value="quartet">quartet</option>
+
+                    </select>
+                </label>
+                <label> Comments
+                    <textarea name="comment" placeholder="let us know"></textarea>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name * <input type="text" name="fname" required></label>
+                <label>Last Name * <input type="text" name="lname" required></label>
+                <label>Email * <input type="email" name="email" required placeholder="someone@email.com"></label>
+                <label>Cell * <input type="tel" name="telephone" required placeholder="801 098 7654"></label>
+            </fieldset>
+            <input type="submit" value="Submit">
+
+        </form>
+        
+    </main>
+    <footer>
+        <!--Credits and copyrights-->
+        <p>&copy; 2026 &bull; Salomé Passeraub &bull; Portfolio</p>
+    </footer>
+</body>
+
+</html>
