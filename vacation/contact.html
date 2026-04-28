@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Salomé Passeraub">
+    <meta name="description" content="vacation website first page">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="vacation.css">
+    <title>Vacation Website: Home Page</title>
+</head>
+
+<body>
+
+    <header>
+        <span>Welcome to Paradise</span>
+    </header>
+
+    <nav>
+
+        <ul>
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="destination.html">Destination</a></li>
+            <li><a href="video.html">Video Clip</a></li>
+            <li><a href="package.html">Package</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contact</h1>
+        <form method="get" class="myForm" action="thankyou.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name * <input type="text" name="fname" required></label>
+                <label>Last Name * <input type="text" name="lname" required></label>
+                <label>Email * <input type="email" name="email" required placeholder="someone@email.com"></label>
+                <label>Cell * <input type="tel" name="telephone" required placeholder="801 098 7654"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Package</legend>
+                <label><input type="radio" name="method" value="option 1 tulum">Option 1: Tulum</label>
+
+
+                <label><input type="radio" name="method" value="option 2">Option 2: Nassau</label>
+                <label><input type="radio" name="method" value="option 3">Option 3: San Juan</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Hotel Options</legend>
+                <label><input type="checkbox" name="breakfasts" value="chosen">breakfasts included</label>
+                <label><input type="checkbox" name="free wifi" value="chosen">Free wifi</label>
+                <label><input type="checkbox" name="ocean" value="chosen">ocean view</label>
+                <label><input type="checkbox" name="diner" value="chosen">dinner included</label>
+                <label><input type="checkbox" name="laundry" value="chosen">laundry</label>
+                <label><input type="checkbox" name="others" value="chosen">others</label>
+                <label> Comments
+                    <textarea name="comment" placeholder="please tell us more"></textarea>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Cars for rent</legend>
+
+                <label> Brand?
+                    <select name="brand">
+                        <option value="none">Please select</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Volvo">Volvo</option>
+                        <option value="Toyota">Toyota</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Peugot">Peugot</option>
+
+                    </select>
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Any last comments?</legend>
+                <label> Comments
+                    <textarea name="comment" placeholder="let us know"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 &bull; Salomé Passeraub &bull; Vacation Website</p>
+    </footer>
+
+</body>
+
+</html>

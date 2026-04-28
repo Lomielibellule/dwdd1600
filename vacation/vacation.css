@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+/*header here*/
+header {
+    background-color: #a62317;
+    padding: 1rem 20px;
+     background-image: linear-gradient(to bottom, #c43d31, #a62317);
+}
+
+header span {
+    color: white;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/*navigation*/
+
+/*smaller screen*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: left;
+        padding: .8rem;
+        color: #a62317 ;
+        text-decoration: none;
+        border-bottom: solid 1px #f2e3d5;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    nav .active a {
+        background-color: #a62317;
+        color: white;
+        background-image: linear-gradient(to bottom, #c43d31, #a62317);
+    }
+
+    nav a:hover {
+        background-color: #f2e3d5;
+    }
+}
+
+/*bigger screen*/
+
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #f7ede4;
+        margin: 0;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 0;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #a62317;
+    }
+
+    nav ul li.active a {
+        background-color: #a62317;
+        color: white;
+        background-image: linear-gradient(to bottom, #c43d31, #a62317);
+        border-radius: 10px;
+    }
+
+    nav li a:hover {
+        background-color: #f2e3d5;
+        border-radius: 10px;
+    }
+}
+
+/*main*/
+
+main {
+    background-color: #f7ede4;
+    padding: 20px;
+}
+
+main h1 {
+    color: #7e1910;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: .5rem;
+    border: solid #f24b6A 2px;
+    border-radius: 5px;
+}
+main h2 {
+    color: #f24b6A;
+    margin-bottom: 10px;
+}
+
+main p {
+    color: #7e1910;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+main p a {
+    color: #7e1910;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+main a:hover {
+    color: #f24b6A;
+}
+main ul  {
+    color: #7e1910;
+    font-size: 1.2rem;
+}
+/*photo*/
+
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+main img {
+    width: 23%;
+    height: auto;
+    float: left;
+    padding: 15px;
+    border-radius: 30px;
+}
+/*gallery*/
+div.photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+div.photo figure {
+    margin: 0;
+    border: #f2e3d5 2px solid;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+div.photo img:hover {
+    box-shadow: 0 0 10px #3d0d0880;
+}
+
+div.photo figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #a62317;
+}
+
+
+/*forms*/
+
+.myForm fieldset {
+    border: 2px solid #c43d31;
+    border-radius: 5px;
+    margin-bottom: .8rem;
+    background-color: #f24b6A;
+}
+
+.myForm legend {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #be203d;
+    padding: .5rem;
+    border-radius: 3px;
+}
+
+.myForm label {
+    margin: .3rem;
+}
+
+.myForm label,
+.myForm select,
+.myForm [type=text],
+.myForm [type=email],
+.myForm textarea,
+.myForm [type=tel] {
+    display: block;
+    margin: .2rem;
+}
+
+.myForm [type=text],
+.myForm [type=email],
+.myForm select,
+.myForm textarea,
+.myForm [type=tel] {
+    border: solid 1px #888;
+    padding: .5rem;
+    width: 250px;
+    border-radius: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+.myForm [type=submit] {
+    background-color: #f24b6A;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+
+.myForm [type=submit]:hover {
+    background-color: #44A6A6;
+}
+
+/*footer stuff*/
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    clear: both;
+
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 3px;
+    padding: 1rem;
+    font-size: .8rem;
+    color: #333;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
